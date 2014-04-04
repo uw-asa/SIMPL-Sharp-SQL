@@ -1,0 +1,58 @@
+#SYMBOL_NAME "SimplPlusModule_SQL"
+#HINT "SimplPlusModule_SQL"
+#CATEGORY "46"
+#DEFAULT_VOLATILE
+#ENABLE_TRACE
+#ENABLE_STACK_CHECKING 
+#USER_SIMPLSHARP_LIBRARY "SIMPLSharp_MSSQLConnection"
+
+DIGITAL_INPUT GetAllRows;
+ANALOG_INPUT GetRow;
+STRING_INPUT AddRow_Name[50];
+
+STRING_OUTPUT Results;
+
+
+                              
+VOLATILE STRING sql_username[50], sql_password[50], sql_server[100], sql_database[50];
+
+
+
+PUSH GetAllRows
+{
+	MSSQLConnection db;	
+	db.makeConnection(sql_username, sql_password, sql_server, sql_database);
+	Results = db.SelectRowsAll();
+}
+
+CHANGE GetRow
+{
+	MSSQLConnection db;	
+	db.makeConnection(sql_username, sql_password, sql_server, sql_database);
+	Results = db.SelectRow(GetRow);
+}
+
+CHANGE AddRow_Name
+{
+	SIGNED_LONG_INTEGER rows;
+	MSSQLConnection db;	
+	db.makeConnection(sql_username, sql_password, sql_server, sql_database);
+	rows = db.InsertRow(AddRow_Name);
+	MAKESTRING(Results,"Rows affected: %ld", rows);
+}
+
+
+
+
+
+FUNCTION MAIN()
+{	        	
+	WaitForInitializationComplete();
+
+	sql_username = "";
+	sql_password = "";
+	sql_server   = "";
+	sql_database = "";
+
+}
+     
