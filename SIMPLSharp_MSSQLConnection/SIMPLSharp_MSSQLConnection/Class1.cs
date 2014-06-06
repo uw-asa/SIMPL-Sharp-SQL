@@ -10,7 +10,7 @@ namespace SIMPLSharp_MSSQLConnection
 {
     public class MSSQLConnection
     {
-        private SqlConnection myConnection;  // Needed???
+        private SqlConnection myConnection;
         public string databasename;
 
         public void makeConnection(string userid, string password, string server, string database)
