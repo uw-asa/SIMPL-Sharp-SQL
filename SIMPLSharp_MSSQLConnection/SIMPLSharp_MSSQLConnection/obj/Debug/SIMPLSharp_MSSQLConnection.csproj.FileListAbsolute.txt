@@ -1,0 +1,6 @@
+C:\repositories\SIMPL-Sharp-SQL\SIMPLSharp_MSSQLConnection\SIMPLSharp_MSSQLConnection\bin\SIMPLSharp_MSSQLConnection.dll
+C:\repositories\SIMPL-Sharp-SQL\SIMPLSharp_MSSQLConnection\SIMPLSharp_MSSQLConnection\bin\SIMPLSharp_MSSQLConnection.pdb
+C:\repositories\SIMPL-Sharp-SQL\SIMPLSharp_MSSQLConnection\SIMPLSharp_MSSQLConnection\bin\SimplSharpCustomAttributesInterface.dll
+C:\repositories\SIMPL-Sharp-SQL\SIMPLSharp_MSSQLConnection\SIMPLSharp_MSSQLConnection\obj\Debug\ResolveAssemblyReference.cache
+C:\repositories\SIMPL-Sharp-SQL\SIMPLSharp_MSSQLConnection\SIMPLSharp_MSSQLConnection\obj\Debug\SIMPLSharp_MSSQLConnection.dll
+C:\repositories\SIMPL-Sharp-SQL\SIMPLSharp_MSSQLConnection\SIMPLSharp_MSSQLConnection\obj\Debug\SIMPLSharp_MSSQLConnection.pdb
